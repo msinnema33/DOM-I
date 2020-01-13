@@ -96,3 +96,14 @@ footText.textContent = siteContent['footer']['copyright'];
 
 let btnText = document.querySelector('.cta button');
 btnText.textContent = siteContent['cta']['button'];
+
+let firstAnchor = document.createElement('a');
+let lastAnchor = document.createElement('a');
+
+firstAnchor.textContent = "Before";
+lastAnchor.textContent = "After";
+
+const addedContent = document.querySelector('nav');
+
+addedContent.append(lastAnchor);
+addedContent.prepend(firstAnchor);
